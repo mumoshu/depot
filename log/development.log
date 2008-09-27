@@ -142,3 +142,40 @@ ActionController::RoutingError (No route matches "" with {:method=>:get}):
     ./dispatch.cgi:10
 
 Rendering /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing InfoController#properties (for 120.74.222.234 at 2008-09-27 02:39:38) [GET]
+  Session ID: 8f9dc97bf793f7da8d3f4ffa854605d3
+  Parameters: {"action"=>"properties", "controller"=>"rails/info"}
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-27 02:39:39) [GET]
+  Session ID: 8eec6c3dea46b2bb3f51dc5a3a43ffcf
+  Parameters: {"action"=>"index", "controller"=>"products"}
+Completed in 0.00166 (603 reqs/sec) | Rendering: 0.00031 (18%) | DB: 0.00000 (0%) | 500 Internal Server Error [http://mumoshu.com/depot/rails/info/properties]
+  [4;36;1mProduct Load (0.031738)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.18919 (5 reqs/sec) | Rendering: 0.09938 (52%) | DB: 0.03174 (16%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-27 05:23:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDMyNzYzYzA1NzdlNzdiMWJjYWQ2MGQ1Yzc0NTZl
+MWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--599f60668fd9f4aa24aca76b780f16391b6c8162
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001904)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.07229 (13 reqs/sec) | Rendering: 0.01157 (15%) | DB: 0.00190 (2%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-27 05:24:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDMyNzYzYzA1NzdlNzdiMWJjYWQ2MGQ1Yzc0NTZl
+MWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--599f60668fd9f4aa24aca76b780f16391b6c8162
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001589)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.05984 (16 reqs/sec) | Rendering: 0.00733 (12%) | DB: 0.00159 (2%) | 200 OK [http://mumoshu.com/depot/products]
