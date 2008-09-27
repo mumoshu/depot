@@ -1,0 +1,144 @@
+  [4;36;1mSQL (0.000594)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000181)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.202362)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.001442)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000323)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000108)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20080927051702)
+  [4;36;1mSQL (0.000075)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.004544)[0m   [0mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL, "description" text DEFAULT NULL NULL, "image_url" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000667)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080927051702')[0m
+  [4;35;1mSQL (0.000183)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000193)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000051)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mProduct Create (0.000474)[0m   [0;1mINSERT INTO "products" ("created_at", "title", "image_url", "updated_at", "description") VALUES('2008-09-27 05:19:36', 'product #0', NULL, '2008-09-27 05:19:36', 'a product')[0m
+  [4;35;1mProduct Create (0.000229)[0m   [0mINSERT INTO "products" ("created_at", "title", "image_url", "updated_at", "description") VALUES('2008-09-27 05:19:37', 'product #1', NULL, '2008-09-27 05:19:37', 'a product')[0m
+  [4;36;1mProduct Create (0.000203)[0m   [0;1mINSERT INTO "products" ("created_at", "title", "image_url", "updated_at", "description") VALUES('2008-09-27 05:19:37', 'product #2', NULL, '2008-09-27 05:19:37', 'a product')[0m
+  [4;35;1mProduct Create (0.000145)[0m   [0mINSERT INTO "products" ("created_at", "title", "image_url", "updated_at", "description") VALUES('2008-09-27 05:19:37', 'product #3', NULL, '2008-09-27 05:19:37', 'a product')[0m
+  [4;36;1mProduct Create (0.000197)[0m   [0;1mINSERT INTO "products" ("created_at", "title", "image_url", "updated_at", "description") VALUES('2008-09-27 05:19:37', 'product #4', NULL, '2008-09-27 05:19:37', 'a product')[0m
+  [4;35;1mProduct Create (0.000148)[0m   [0mINSERT INTO "products" ("created_at", "title", "image_url", "updated_at", "description") VALUES('2008-09-27 05:19:37', 'product #5', NULL, '2008-09-27 05:19:37', 'a product')[0m
+  [4;36;1mProduct Create (0.000142)[0m   [0;1mINSERT INTO "products" ("created_at", "title", "image_url", "updated_at", "description") VALUES('2008-09-27 05:19:37', 'product #6', NULL, '2008-09-27 05:19:37', 'a product')[0m
+  [4;35;1mProduct Create (0.000151)[0m   [0mINSERT INTO "products" ("created_at", "title", "image_url", "updated_at", "description") VALUES('2008-09-27 05:19:37', 'product #7', NULL, '2008-09-27 05:19:37', 'a product')[0m
+  [4;36;1mProduct Create (0.000147)[0m   [0;1mINSERT INTO "products" ("created_at", "title", "image_url", "updated_at", "description") VALUES('2008-09-27 05:19:37', 'product #8', NULL, '2008-09-27 05:19:37', 'a product')[0m
+  [4;35;1mProduct Create (0.000139)[0m   [0mINSERT INTO "products" ("created_at", "title", "image_url", "updated_at", "description") VALUES('2008-09-27 05:19:37', 'product #9', NULL, '2008-09-27 05:19:37', 'a product')[0m
+  [4;36;1mProduct Load (0.001843)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mSQL (0.000641)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000441)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000459)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000515)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing ApplicationController#index (for  at 2008-09-26 22:51:29) [GET]
+  Session ID: 4b77bc5c09a8aab6b98bcffe03ff14f3
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "" with {:method=>:get}):
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    ./dispatch.cgi:10
+
+Rendering /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for  at 2008-09-26 22:51:48) [GET]
+  Session ID: 7ed1250a70847ca683b53598dd3454d2
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "" with {:method=>:get}):
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    ./dispatch.rb:10
+
+Rendering /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for  at 2008-09-26 22:51:53) [GET]
+  Session ID: 37ceea219b2be6af70e701d499908d19
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "" with {:method=>:get}):
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    ./dispatch.cgi:10
+
+Rendering /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for  at 2008-09-26 22:56:15) [GET]
+  Session ID: e3fe02bf79a1857744f327bf11c9ea7f
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "" with {:method=>:get}):
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    ./dispatch.cgi:10
+
+Rendering /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for  at 2008-09-26 22:56:19) [GET]
+  Session ID: 84af57c52b8c10c57f80fb06da9f7da1
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "" with {:method=>:get}):
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    ./dispatch.cgi:10
+
+Rendering /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
