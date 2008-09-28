@@ -1,0 +1,34 @@
+#notice {
+    border: 2px solid red;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: $f0f0f0;
+    font: bold smaller sans-serif;
+}
+
+#product-list .list-title {
+    color: #244;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#product-list .list-image {
+    width: 60px;
+    height: 70px;
+    }
+
+#product-list .list-actions {
+
+    font-size: x-small;
+    text-align: right;
+    padding-left: 1em;
+}
+
+#product-list .list-line-even {
+    background: #e0f8f8;
+}
+
+#product-list .list-line-odd {
+    background: #f8b0f8;
+}
+

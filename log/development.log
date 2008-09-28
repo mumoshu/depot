@@ -433,3 +433,243 @@ c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
 Rendering template within layouts/products
 Rendering products/index
 Completed in 0.22050 (4 reqs/sec) | Rendering: 0.21518 (97%) | DB: 0.00106 (0%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 04:31:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001086)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.06052 (16 reqs/sec) | Rendering: 0.05483 (90%) | DB: 0.00109 (1%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 04:32:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001035)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+
+
+ActionView::TemplateError (undefined method `dscription' for #<Product:0x2b8a7ab967e0>) on line #14 of products/index.html.erb:
+11:     
+12:     <td width="60">
+13:       <span class="list-title"><%= h(product.title) %></span><br />
+14:       <%= h(truncate(product.dscription, 80)) %>
+15:     </td>
+16: 
+17:     <td class="list-actions">
+
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/attribute_methods.rb:256:in `method_missing'
+    app/views/products/index.html.erb:14:in `_run_erb_47app47views47products47index46html46erb'
+    app/views/products/index.html.erb:5:in `each'
+    app/views/products/index.html.erb:5:in `_run_erb_47app47views47products47index46html46erb'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/products_controller.rb:7:in `index'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/mumoshu/.ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    dispatch.cgi:10
+
+Rendering /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 04:32:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.004468)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.06607 (15 reqs/sec) | Rendering: 0.05731 (86%) | DB: 0.00447 (6%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 04:36:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001030)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.05772 (17 reqs/sec) | Rendering: 0.05256 (91%) | DB: 0.00103 (1%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 04:36:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001033)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.05812 (17 reqs/sec) | Rendering: 0.05300 (91%) | DB: 0.00103 (1%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 04:39:00) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001036)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.05879 (17 reqs/sec) | Rendering: 0.05376 (91%) | DB: 0.00104 (1%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#edit (for 120.74.222.234 at 2008-09-28 04:40:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"products"}
+  [4;36;1mProduct Load (0.000547)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 0.07919 (12 reqs/sec) | Rendering: 0.01195 (15%) | DB: 0.00055 (0%) | 200 OK [http://mumoshu.com/depot/products/11/edit]
+
+
+Processing ProductsController#update (for 120.74.222.234 at 2008-09-28 04:40:42) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"c3961c357c8c18faa7335ac3e765a25566dba551", "_method"=>"put", "action"=>"update", "id"=>"11", "product"=>{"title"=>"Pragmatic Version Control", "image_url"=>"/images/git.jpg", "description"=>" <p>\r\nThis book is a recipe-based approach to using Subversion that will\r\nget you up and running quickly---and correctly. ALl projects need \r\nversion control: it's a foundational piece of any project's\r\ninfrastructure. Yet half of all project teams in the U.S. don't use\r\nany version control at all. Many others don't use it well, and end\r\nup experiencing time-consuming problems.\r\n    </p> "}, "controller"=>"products"}
+  [4;36;1mProduct Load (0.000277)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mSQL (0.000155)[0m   [0mSELECT "title" FROM "products" WHERE ("products".title = 'Pragmatic Version Control' AND "products".id <> 11) [0m
+  [4;36;1mProduct Update (0.000444)[0m   [0;1mUPDATE "products" SET "updated_at" = '2008-09-28 11:40:42', "image_url" = '/images/git.jpg', "description" = ' <p>
+This book is a recipe-based approach to using Subversion that will
+get you up and running quickly---and correctly. ALl projects need 
+version control: it''s a foundational piece of any project''s
+infrastructure. Yet half of all project teams in the U.S. don''t use
+any version control at all. Many others don''t use it well, and end
+up experiencing time-consuming problems.
+ </p> ' WHERE "id" = 11[0m
+Redirected to http://mumoshu.com/depot/products/11
+Completed in 0.38830 (2 reqs/sec) | DB: 0.00088 (0%) | 302 Found [http://mumoshu.com/depot/products/11]
+
+
+Processing ProductsController#show (for 120.74.222.234 at 2008-09-28 04:40:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZQcm9kdWN0IHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRl
+ZC4GOgpAdXNlZHsGOwdG--9a27814a0995fe6413f58fb495b9a70c57df38d1
+  Parameters: {"action"=>"show", "id"=>"11", "controller"=>"products"}
+  [4;36;1mProduct Load (0.000510)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 0.07919 (12 reqs/sec) | Rendering: 0.01693 (21%) | DB: 0.00051 (0%) | 200 OK [http://mumoshu.com/depot/products/11]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 04:40:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZQcm9kdWN0IHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRl
+ZC4GOgpAdXNlZHsGOwdU--9b6a48e6d18414b58437d7c435be38bb5e70da1d
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001019)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.06020 (16 reqs/sec) | Rendering: 0.05517 (91%) | DB: 0.00102 (1%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#edit (for 120.74.222.234 at 2008-09-28 04:41:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"products"}
+  [4;36;1mProduct Load (0.000613)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 0.09502 (10 reqs/sec) | Rendering: 0.00592 (6%) | DB: 0.00061 (0%) | 200 OK [http://mumoshu.com/depot/products/11/edit]
+
+
+Processing ProductsController#update (for 120.74.222.234 at 2008-09-28 04:42:07) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"c3961c357c8c18faa7335ac3e765a25566dba551", "_method"=>"put", "action"=>"update", "id"=>"11", "product"=>{"title"=>"Pragmatic Version Control", "image_url"=>"/depot/images/git.jpg", "description"=>" <p>\r\nThis book is a recipe-based approach to using Subversion that will\r\nget you up and running quickly---and correctly. ALl projects need \r\nversion control: it's a foundational piece of any project's\r\ninfrastructure. Yet half of all project teams in the U.S. don't use\r\nany version control at all. Many others don't use it well, and end\r\nup experiencing time-consuming problems.\r\n    </p> "}, "controller"=>"products"}
+  [4;36;1mProduct Load (0.000282)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mSQL (0.000155)[0m   [0mSELECT "title" FROM "products" WHERE ("products".title = 'Pragmatic Version Control' AND "products".id <> 11) [0m
+  [4;36;1mProduct Update (0.000429)[0m   [0;1mUPDATE "products" SET "updated_at" = '2008-09-28 11:42:07', "image_url" = '/depot/images/git.jpg' WHERE "id" = 11[0m
+Redirected to http://mumoshu.com/depot/products/11
+Completed in 0.06482 (15 reqs/sec) | DB: 0.00087 (1%) | 302 Found [http://mumoshu.com/depot/products/11]
+
+
+Processing ProductsController#show (for 120.74.222.234 at 2008-09-28 04:42:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZQcm9kdWN0IHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRl
+ZC4GOgpAdXNlZHsGOwdG--9a27814a0995fe6413f58fb495b9a70c57df38d1
+  Parameters: {"action"=>"show", "id"=>"11", "controller"=>"products"}
+  [4;36;1mProduct Load (0.000500)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 0.06170 (16 reqs/sec) | Rendering: 0.00377 (6%) | DB: 0.00050 (0%) | 200 OK [http://mumoshu.com/depot/products/11]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 04:42:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZQcm9kdWN0IHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRl
+ZC4GOgpAdXNlZHsGOwdU--9b6a48e6d18414b58437d7c435be38bb5e70da1d
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.000965)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.05831 (17 reqs/sec) | Rendering: 0.05343 (91%) | DB: 0.00096 (1%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 04:42:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001007)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.05938 (16 reqs/sec) | Rendering: 0.05423 (91%) | DB: 0.00101 (1%) | 200 OK [http://mumoshu.com/depot/products]
