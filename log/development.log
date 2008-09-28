@@ -198,3 +198,156 @@ Migrating to AddPriceToProduct (20080927131434)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;36;1mSQL (0.000052)[0m   [0;1mPRAGMA index_list("products")[0m
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-27 06:40:41) [GET]
+  Session ID: 6017c8a3d951685f72a3f626af5ed864
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001716)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.06772 (14 reqs/sec) | Rendering: 0.00803 (11%) | DB: 0.00172 (2%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#new (for 120.74.222.234 at 2008-09-27 06:40:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"new", "controller"=>"products"}
+Rendering template within layouts/products
+Rendering products/new
+Completed in 0.07221 (13 reqs/sec) | Rendering: 0.01417 (19%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/depot/products/new]
+
+
+Processing ProductsController#create (for 120.74.222.234 at 2008-09-27 06:40:53) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"c3961c357c8c18faa7335ac3e765a25566dba551", "action"=>"create", "product"=>{"title"=>"", "image_url"=>"", "description"=>""}, "controller"=>"products"}
+  [4;36;1mSQL (0.000173)[0m   [0;1mSELECT "title" FROM "products" WHERE ("products".title = '') [0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 0.06512 (15 reqs/sec) | Rendering: 0.00353 (5%) | DB: 0.00017 (0%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#new (for 202.218.147.251 at 2008-09-27 06:41:26) [GET]
+  Session ID: 63ced728c47b53ecc6e253cab96974f2
+  Parameters: {"action"=>"new", "controller"=>"products"}
+Rendering template within layouts/products
+Rendering products/new
+Completed in 0.06268 (15 reqs/sec) | Rendering: 0.00608 (9%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/depot/products/new]
+
+
+Processing ProductsController#create (for 120.74.222.234 at 2008-09-27 06:42:02) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"c3961c357c8c18faa7335ac3e765a25566dba551", "action"=>"create", "product"=>{"title"=>"product a", "image_url"=>"a", "description"=>"a new product"}, "controller"=>"products"}
+  [4;36;1mSQL (0.000160)[0m   [0;1mSELECT "title" FROM "products" WHERE ("products".title = 'product a') [0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 0.06293 (15 reqs/sec) | Rendering: 0.00341 (5%) | DB: 0.00016 (0%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#new (for 219.94.149.193 at 2008-09-27 06:44:34) [GET]
+  Session ID: 0368001e477ee0ffd63e530c5239c6e8
+  Parameters: {"action"=>"new", "controller"=>"products"}
+Rendering template within layouts/products
+Rendering products/new
+Completed in 0.05966 (16 reqs/sec) | Rendering: 0.00543 (9%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/depot/products/new]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-27 07:24:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.059747)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.07771 (12 reqs/sec) | Rendering: 0.00785 (10%) | DB: 0.05975 (76%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-27 07:25:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.046573)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.06317 (15 reqs/sec) | Rendering: 0.00765 (12%) | DB: 0.04657 (73%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-27 07:26:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.048708)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.06636 (15 reqs/sec) | Rendering: 0.00786 (11%) | DB: 0.04871 (73%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-27 08:28:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.050935)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.07015 (14 reqs/sec) | Rendering: 0.00881 (12%) | DB: 0.05094 (72%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-27 09:18:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.061267)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.08023 (12 reqs/sec) | Rendering: 0.00813 (10%) | DB: 0.06127 (76%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-27 09:50:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.066510)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.08504 (11 reqs/sec) | Rendering: 0.00813 (9%) | DB: 0.06651 (78%) | 200 OK [http://mumoshu.com/depot/products]
+  [4;36;1mSQL (0.000969)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000362)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000178)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20080927051702)
+  [4;35;1mSQL (0.000175)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddPriceToProduct (20080927131434)
+  [4;36;1mSQL (0.000173)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddTestData (20080928110829)
+  [4;35;1mSQL (0.000176)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mProduct Delete all (0.002848)[0m   [0;1mDELETE FROM "products" WHERE 1=1[0m
+  [4;35;1mSQL (0.000103)[0m   [0mSELECT "title" FROM "products" WHERE ("products".title = 'Pragmatic Version Control') [0m
+  [4;36;1mProduct Create (0.000261)[0m   [0;1mINSERT INTO "products" ("price", "created_at", "title", "image_url", "updated_at", "description") VALUES(28.5, '2008-09-28 11:15:21', 'Pragmatic Version Control', '/images/svn.jpg', '2008-09-28 11:15:21', ' <p>
+This book is a recipe-based approach to using Subversion that will
+get you up and running quickly---and correctly. ALl projects need 
+version control: it''s a foundational piece of any project''s
+infrastructure. Yet half of all project teams in the U.S. don''t use
+any version control at all. Many others don''t use it well, and end
+up experiencing time-consuming problems.
+ </p> ')[0m
+  [4;35;1mSQL (0.000713)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080928110829')[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000234)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000190)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000051)[0m   [0mPRAGMA index_list("products")[0m
