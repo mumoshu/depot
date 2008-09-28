@@ -14,6 +14,10 @@
       <%= h(truncate(product.description, 80)) %>
     </td>
 
+    <td>
+      <%= h(product.price) %>
+    </td>
+    
     <td class="list-actions">
     <%= link_to 'Show', product %><br />
     <%= link_to 'Edit', edit_product_path(product) %><br />

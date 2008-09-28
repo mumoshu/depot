@@ -673,3 +673,123 @@ c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
 Rendering template within layouts/products
 Rendering products/index
 Completed in 0.05938 (16 reqs/sec) | Rendering: 0.05423 (91%) | DB: 0.00101 (1%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#edit (for 202.218.147.251 at 2008-09-28 04:52:24) [GET]
+  Session ID: d76e0633baf4a53bf8e66cd273843293
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"products"}
+  [4;36;1mProduct Load (0.000519)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 0.05854 (17 reqs/sec) | Rendering: 0.00527 (9%) | DB: 0.00052 (0%) | 200 OK [http://mumoshu.com/depot/products/11/edit]
+
+
+Processing ProductsController#show (for 202.218.147.251 at 2008-09-28 04:53:03) [GET]
+  Session ID: 8e4e74151cc97e142ebefaf300a26b63
+  Parameters: {"action"=>"show", "id"=>"11", "controller"=>"products"}
+  [4;36;1mProduct Load (0.000525)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 0.05675 (17 reqs/sec) | Rendering: 0.00365 (6%) | DB: 0.00052 (0%) | 200 OK [http://mumoshu.com/depot/products/11]
+
+
+Processing ProductsController#edit (for 219.94.149.193 at 2008-09-28 04:54:28) [GET]
+  Session ID: bea1111668a7993935a61c1da111daea
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"products"}
+  [4;36;1mProduct Load (0.000543)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 0.06536 (15 reqs/sec) | Rendering: 0.00537 (8%) | DB: 0.00054 (0%) | 200 OK [http://mumoshu.com/depot/products/11/edit]
+
+
+Processing ProductsController#show (for 219.94.149.193 at 2008-09-28 04:54:38) [GET]
+  Session ID: 56549dd65ee2b2e01f0e2c29e97460e3
+  Parameters: {"action"=>"show", "id"=>"11", "controller"=>"products"}
+  [4;36;1mProduct Load (0.000526)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 0.05679 (17 reqs/sec) | Rendering: 0.00359 (6%) | DB: 0.00053 (0%) | 200 OK [http://mumoshu.com/depot/products/11]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 05:51:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.000987)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.05876 (17 reqs/sec) | Rendering: 0.05378 (91%) | DB: 0.00099 (1%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 05:52:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001160)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+
+
+ActionView::TemplateError (can't convert BigDecimal into String) on line #18 of products/index.html.erb:
+15:     </td>
+16: 
+17:     <td>
+18:       <%= h("$" + product.price) %>
+19:     </td>
+20:     
+21:     <td class="list-actions">
+
+    app/views/products/index.html.erb:18:in `+'
+    app/views/products/index.html.erb:18:in `_run_erb_47app47views47products47index46html46erb'
+    app/views/products/index.html.erb:5:in `each'
+    app/views/products/index.html.erb:5:in `_run_erb_47app47views47products47index46html46erb'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/products_controller.rb:7:in `index'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/mumoshu/.ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    dispatch.cgi:10
+
+Rendering /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
