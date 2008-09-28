@@ -836,3 +836,36 @@ c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
 Rendering template within layouts/products
 Rendering products/new
 Completed in 0.06383 (15 reqs/sec) | Rendering: 0.00359 (5%) | DB: 0.00017 (0%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 06:02:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001023)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.05955 (16 reqs/sec) | Rendering: 0.05433 (91%) | DB: 0.00102 (1%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 06:11:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001057)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.14821 (6 reqs/sec) | Rendering: 0.14286 (96%) | DB: 0.00106 (0%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 06:11:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001015)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.06207 (16 reqs/sec) | Rendering: 0.05687 (91%) | DB: 0.00101 (1%) | 200 OK [http://mumoshu.com/depot/products]
