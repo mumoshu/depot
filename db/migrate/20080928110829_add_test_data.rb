@@ -11,7 +11,7 @@ infrastructure. Yet half of all project teams in the U.S. don't use
 any version control at all. Many others don't use it well, and end
 up experiencing time-consuming problems.
     </p> },
-    :image_url => '/images/svn.jpg',
+    :image_url => '/depot/images/git.jpg',
     :price => 28.50)
   end
 
