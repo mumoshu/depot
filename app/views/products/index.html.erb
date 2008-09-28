@@ -19,9 +19,5 @@
 <% end %>
 </table>
 
-<%= link_to 'prev',
-    { :page => @product_pages.current.previous } if @product_pages.current.previous %>
-<%= link_to 'next',
-    { :page => @product_pages.current.next } if @product_pages.current.next %>
 <br />
 <%= link_to 'New product', new_product_path %>
