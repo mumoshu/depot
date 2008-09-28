@@ -793,3 +793,46 @@ ActionView::TemplateError (can't convert BigDecimal into String) on line #18 of 
     dispatch.cgi:10
 
 Rendering /home/mumoshu/.ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ProductsController#index (for 120.74.222.234 at 2008-09-28 05:55:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.001062)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 0.06892 (14 reqs/sec) | Rendering: 0.06357 (92%) | DB: 0.00106 (1%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#new (for 120.74.222.234 at 2008-09-28 05:55:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"action"=>"new", "controller"=>"products"}
+Rendering template within layouts/products
+Rendering products/new
+Completed in 0.07084 (14 reqs/sec) | Rendering: 0.01505 (21%) | DB: 0.00000 (0%) | 200 OK [http://mumoshu.com/depot/products/new]
+
+
+Processing ProductsController#create (for 120.74.222.234 at 2008-09-28 05:55:23) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"c3961c357c8c18faa7335ac3e765a25566dba551", "action"=>"create", "product"=>{"title"=>"", "image_url"=>"", "description"=>""}, "controller"=>"products"}
+  [4;36;1mSQL (0.000160)[0m   [0;1mSELECT "title" FROM "products" WHERE ("products".title = '') [0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 0.05911 (16 reqs/sec) | Rendering: 0.00352 (5%) | DB: 0.00016 (0%) | 200 OK [http://mumoshu.com/depot/products]
+
+
+Processing ProductsController#create (for 120.74.222.234 at 2008-09-28 05:55:33) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDQzZTVmMjAxZGQ5YmM0MWQxZjE5NmM3OTRjZTNh
+MDgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0c1c74945ae07c10e46f7236766edc34d739d841
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"c3961c357c8c18faa7335ac3e765a25566dba551", "action"=>"create", "product"=>{"title"=>"aaaaaaaaaaaaaaaaa", "image_url"=>"", "description"=>""}, "controller"=>"products"}
+  [4;36;1mSQL (0.000170)[0m   [0;1mSELECT "title" FROM "products" WHERE ("products".title = 'aaaaaaaaaaaaaaaaa') [0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 0.06383 (15 reqs/sec) | Rendering: 0.00359 (5%) | DB: 0.00017 (0%) | 200 OK [http://mumoshu.com/depot/products]

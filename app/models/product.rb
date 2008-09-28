@@ -9,6 +9,9 @@ class Product < ActiveRecord::Base
   validates_format_of :image_url,
   :with     => %r{\.(gif|jpg|png)$}i,
   :message => "は GIF、JPG、PNG画像のURLでなければなりません"
+  validates_length_of :title,
+  :minimum => 10,
+  :message => "は 10文字以上の長さでなければなりません"
 
   protected
   def validate
